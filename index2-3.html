@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- solves Q3 and 4 -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <h1> enter user information </h1>
+<body>
+    <form  name = "form" onsubmit="return validateForm()" method="post">
+        <fieldset>
+        
+        <legend><h1>Log-In</h1></legend>	
+        <p>
+            <label>Username: <input type="text" name = "username" id="user" > </label>
+        </p>
+        
+        <p>
+            <label>Password: <input type="Password" id="pass"	size="20"	maxlength="30"> </label>
+        </p>
+        <p >
+            <input type = "submit" id = "Submit" value = "Submit">	
+        </p>
+</fieldset>
+<script src="script2.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- solves the BONUS question -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+    <form  name = "form" onsubmit="return validateForm()" method="post">
+        <fieldset>
+        
+        <legend><h1>input the value of a sphere's radius</h1></legend>	
+        <p>
+            <label>RADIUS: <input type="text" name = "rad" id="rad" > </label>
+        </p>
+        <p>
+            <input type = "submit" id = "Submit" value = "Submit">	
+        </p>
+</fieldset>
+<script>
+    function validateForm() {
+    let x = document.forms["form"]["rad"].value;
+        let v = ((4/3)*(Math.PI*Math.pow(x,3)))
+        v = v.toFixed(2)
+        document.querySelector("h2").innerText = "your Radious: " + Math.round(v)
+        return false;
+  }
+
+</script>
+<h2></h2>
+</body>
+</html>

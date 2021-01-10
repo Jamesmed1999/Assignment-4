@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- solves Q1 -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <div class = "b1"></div>
+<button type="button" id = "b1" >Click Me!</button>
+
+<div class = "b2"></div><button type="button"  id = "b2">Click Me!</button>
+<script>
+  let b1text = document.getElementById("b1").innerHTML
+
+document.getElementById("b1").addEventListener('click', event =>{
+   
+    let p1 = document.createElement("p")
+    let p2 = document.createElement("p")
+    
+    p1.innerHTML = "I'm right"
+    document.querySelector(".b1").appendChild(p1)
+    p2.innerHTML = "No I AM"
+    document.querySelector(".b2").appendChild(p2)
+    document.getElementById("b1").innerText = "I'm Right!"
+    
+    document.getElementById("b2").innerText = "No I am!"
+
+
+})
+document.getElementById("b2").addEventListener('click', event =>{
+ 
+    let p1 = document.createElement("p")
+    let p2 = document.createElement("p")
+    p1.innerHTML = "NO I AM"
+    document.querySelector(".b1").appendChild(p1)
+    p2.innerHTML = "I'm Right"
+    document.querySelector(".b2").appendChild(p2)
+    document.getElementById("b2").innerText = "I'm Right!"
+    
+    document.getElementById("b1").innerText = "No I am!"
+
+
+})  
+</script>
+</body>
+</html>
